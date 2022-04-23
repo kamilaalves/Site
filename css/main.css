@@ -25,17 +25,6 @@ main, .content {
     width: 70%;
 }
 
-.redes-sociais ul li{
-    margin-left: 35px;
-    display:inline-block;
-    list-style:none; 
-}
-.redes-sociais{
-    width: 25%;
-    float:right;
-}
-
-
 .header-2{
     background-color: white;
     width: 980px;
@@ -200,5 +189,4 @@ footer li a{
 .fa-twitter-square{
     font-size:25px;
     color:rgb(80, 157, 235);
-
 }
