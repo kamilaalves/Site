@@ -191,8 +191,11 @@ footer li a{
     color:rgb(80, 157, 235);
 }
 
-/* celular */
+/* -------------------- pagina de contato --------------------------- */
 
-@media screen and (max-width: 768px) {
-  
+.fale-conosco{
+    text-align: center;
+}
+.foto-contato{
+    text-align: center;
 }
