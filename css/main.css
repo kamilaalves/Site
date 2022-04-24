@@ -123,6 +123,7 @@ h2{
     width: 29%;
     float: left;
     position:relative;
+   
 }
 
 .col-3 img:hover{
@@ -186,4 +187,13 @@ footer li a{
 .fa-twitter-square{
     font-size:25px;
     color:rgb(80, 157, 235);
+}
+
+/* celular */
+
+@media screen and (max-width: 768px) {
+  
+    
+    
+    
 }
