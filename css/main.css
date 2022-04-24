@@ -196,10 +196,52 @@ footer li a{
 .fale-conosco{
     background-color:#C3DCB2;
     text-align: left;
-    width: 660px;
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding: 30px;
+}
+
+.nome{
+    padding: 25px;
+}
+
+.celular{
+    padding: 25px;
+}
+
+.email{
+    padding:25px;
+}
+
+.faleconosco{
+    padding: 25px;
+
 }
 
 .foto-contato{
     text-align: right;
 }
 
+#fale{
+    width: 250px;
+    height: 35px;
+    padding: 25px;
+    border-color: #87aa72;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#nome{
+    border-color: #87aa72;
+}
+
+#celular{
+    border-color: #87aa72;    
+}
+
+#email{
+    border-color: #87aa72;
+}
