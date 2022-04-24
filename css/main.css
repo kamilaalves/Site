@@ -194,8 +194,12 @@ footer li a{
 /* -------------------- pagina de contato --------------------------- */
 
 .fale-conosco{
-    text-align: center;
+    background-color:#C3DCB2;
+    text-align: left;
+    width: 660px;
 }
+
 .foto-contato{
-    text-align: center;
+    text-align: right;
 }
+
