@@ -152,6 +152,7 @@ h2{
     float: left;
     width: 50%;
     text-align: center;
+    position:relative;
     
 }
 .footer h3 {
@@ -200,7 +201,6 @@ footer li a{
     background-color:#C3DCB2;
     text-align: left;
     width: 400px;
-    margin-top: 100px;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
@@ -226,6 +226,8 @@ footer li a{
 
 .foto-contato{
     text-align: right;
+    padding-right: 20px;
+    
 }
 
 #fale{
