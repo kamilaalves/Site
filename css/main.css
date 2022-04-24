@@ -88,13 +88,13 @@ main, .content {
 
 .texto-destaque{
     text-align: center;
+    
 }
 
 .texto-destaque h1{
     color:#C3DCB2;
     text-transform: uppercase;
     font-family:Georgia, 'Times New Roman', Times, serif;
-
 }
 .texto-destaque p{
     font-family: Arial, Helvetica, sans-serif;
@@ -102,6 +102,9 @@ main, .content {
     color: black;
 }
 
+.foto-p img{
+    border-radius: 15px;
+}
 h2{
     color:#C3DCB2;
     font-size: 35px;
