@@ -23,6 +23,13 @@ main, .content {
     width: 70%;
 }
 
+.nome-loja{
+    width: 25%;
+    float:right;
+    font-family:'lobster';
+    color:#87a376;
+}
+
 .header-2{
     background-color: white;
     width: 980px;
@@ -94,7 +101,9 @@ main, .content {
 .texto-destaque h1{
     color:#C3DCB2;
     text-transform: uppercase;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 2em;
+    
 }
 .texto-destaque p{
     font-family: Arial, Helvetica, sans-serif;
@@ -103,15 +112,14 @@ main, .content {
 }
 
 .foto-p img{
-    border-radius: 15px;
+    border-radius: 8px;
 }
 h2{
     color:#C3DCB2;
     font-size: 35px;
     text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   
-    
+    font-family: Arial, Helvetica, sans-serif;
+      
 }
 .col{
     padding-left: 12px;
@@ -137,15 +145,8 @@ h2{
 .bloco-texto{
     margin-top: 3em;
 }
-.texto1{
-    margin-top:2em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:18px;
-}
 
-
-
-/* footer */
+/* ----------------------------footer------------------------------- */
 
 .col-4 {
     
