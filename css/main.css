@@ -204,7 +204,7 @@ footer li a{
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .nome{
@@ -226,7 +226,9 @@ footer li a{
 
 .foto-contato{
     text-align: right;
-    padding-right: 20px;
+    margin: -20px;
+    margin-top: 30px;
+    padding-top: 30px;
     
 }
 
