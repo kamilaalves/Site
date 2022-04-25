@@ -12,12 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Projeto</title>
-   
+
 </head>
 
 <body>
-    <header class="menu-principal">
-        <main>
+    <section class="menu-principal">
+        <nav>
             <div class="header-1">
                 <div class="logo">
                     <img src="./img/logo2.png">
@@ -25,11 +25,10 @@
                 <div class="nome-loja">
                     <h1>Pet Script</h1>
                 </div>
-                
             </div>
-        </main>
-    </header>
-    <main class="col-100 menu-urls">
+        </nav>
+    </section>
+    <nav class="col-100 menu-urls">
         <div class="header-2">
             <div class="menu">
                 <ul>
@@ -41,113 +40,122 @@
                 </ul>
             </div>
             <div class="busca">
-                <input placeholder="buscar" type="text" />
+                <input placeholder="Buscar" type="text" />
             </div>
         </div>
+    </nav>
+    <div class="models">
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img"><img src="" /></div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons">shopping_cart</span>
+        </div>
+    </header>
+    <main>
+        <h1>Acessórios</h1>
+        <div class="models-area"></div>
     </main>
-    <div class="col-100">
-        <div class="slider-principal">
-            <div><img src="./img/fundo3.webp" alt="fundo">
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Seus Carrinho</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto(-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <div class="modelsWindowArea">
+        <div class="modelsWindowBody">
+            <!-- 
+                Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+                da janela modal vai ser igual, logo vamos fazer uma função
+            -->
+            <div class="modelsInfo--cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" />
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo--desc">--</div>
+                <div class="modelsInfo--sizearea">
+                    <div class="modelsInfo--sector">Tamanhos:</div>
+                    <div class="modelsInfo--sizes">
+                        <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
+                        <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
+                        <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                    </div>
+                </div>
+                <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <button class="modelsInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
             </div>
         </div>
     </div>
-    <div class="col-100">
-        <div class="content texto-destaque">
-            <h2>Acessórios</h2>
-            <div class="col-3 bloco-texto">
-                <img src="./img/bandana1.png"/>
-                <h3> R$9,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/chapeu1.png"/>
-                <h3>R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/oculos-coracao1.png"/>
-                <h3>R$25,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-100">
-        <div class="content texto-destaque">
-            <div class="col-3 bloco-texto">
-                <img src="./img/coelho1.png"/>
-                <h3> R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/lenco1.png"/>
-                <h3>R$15,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/verde1.png"/>
-                <h3>R$15,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-100">
-        <div class="content texto-destaque">
-            <div class="col-3 bloco-texto">
-                <img src="./img/bone1.png"/>
-                <h3> R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/oculos-redondo1.png"/>
-                <h3>R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/touca1.png"/>
-                <h3>R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-100">
-        <div class="content texto-destaque">
-            <div class="col-3 bloco-texto">
-                <img src="./img/oculos-azul.png"/>
-                <h3> R$19,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/leao.png"/>
-                <h3>R$25,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="col-3 bloco-texto">
-                <img src="./img/gravata.png"/>
-                <h3>R$15,90</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
+
     <footer>
         <div class="col-100 footer">
             <div class="content">
                 <div class="col-4">
                     <h3>Redes Sociais</h3>
-                        <ul>
-                            <li>Instagram <a href=""><i class="fab fa-instagram"></i></a></li>
-                           
-                            <li>Twitter <a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        </ul>
-                    </div>
-                
+                    <ul>
+                        <li>Instagram <a href=""><i class="fab fa-instagram"></i></a></li>
+
+                        <li>Twitter <a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+
                 <div class="col-4">
                     <h3>Quem Somos</h3>
                     <p> Kamila Alixandre Alves<br>
                         Leticia Benicio Araujo
                     </p>
                 </div>
-        </div>
-        
+            </div>
+
     </footer>
     <div class="col-100 footer-2">
         <div class="content">
@@ -157,6 +165,8 @@
             </p>
         </div>
     </div>
-
+    <script type="text/javascript" src="js/acessorios.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
