@@ -108,10 +108,10 @@ main{
 
 
 h2{
-    width: 25%;
-    float:right;
-    font-family:'lobster';
-    color:#87a376;  
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#C3DCB2;
 
 }
 
@@ -172,12 +172,6 @@ aside.show{
     padding: 20px;
 }
 
-
-h2{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    color:#C3DCB2;
-}
 
 .models-area{
     display: grid;
@@ -293,7 +287,7 @@ h2{
     padding-bottom: 50px;
 }
 
-.modelsInfo h1{
+.modelsInfo h2{
     margin-top: 50px;
 }
 
