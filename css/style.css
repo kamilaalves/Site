@@ -23,12 +23,14 @@ main, .content {
     width: 70%;
 }
 
-.nome-loja{
+.nome-loja h1{
     width: 25%;
     float:right;
     font-family:'lobster';
     color:#87a376;
+    font-size: 30px;
 }
+
 
 .header-2{
     background-color: white;
