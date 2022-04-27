@@ -632,4 +632,35 @@ footer li a{
     .modelsInfo--cancelMobileButton{
         display: block;
     }
+    .menu-principal {
+        max-width: 100%;
+        height: 70px;  
+    }
+    
+    nav, .content { 
+        max-width:100%;
+        position: relative;  
+    }
+    
+    .nome-loja h1{
+        width: 80%;
+    }
+    
+    .header-2{
+        max-width: 100%;
+        padding:2px;
+    }
+    
+    .menu-urls{
+        width: 100%;
+        height: 80px;
+        border-bottom: 3px solid #C3DCB2;
+    }
+    
+    .menu ul li{
+        display: inline-block;
+        color: black;
+        margin-left: 2px;
+        height:2px;    
+    }  
 }
