@@ -12,7 +12,7 @@ function updateCart() {
         let desconto = 0;
         let total = 0;
         cart.map((itemCart, index)=>{
-            let modelItem = modelsJson.find((itemBD)=>itemBD.id == itemCart.id);
+            let modelItem = modelos.find((itemBD)=>itemBD.id == itemCart.id);
             subtotal += modelItem.price[itemCart.size] * itemCart.qt;
             let cartItem = c('.models .cart--item').cloneNode(true);
             let modelSizeName;
@@ -65,7 +65,7 @@ function main() {
     let modalQt = 0;
     let key = 0;
 
-    modelsJson.map((item, index)=>{
+    modelos.map((item, index)=>{
         let modelsItem = c('.models .models-item').cloneNode(true);
         modelsItem.setAttribute('data-key', index);
         modelsItem.querySelector('.models-item--img img').src= item.img;
@@ -76,17 +76,17 @@ function main() {
             e.preventDefault(); 
             key = e.target.closest('.models-item').getAttribute('data-key'); 
             modalQt = 1;
-            c('.modelsBig img').src = modelsJson[key].img;
-            c('.modelsInfo h1').innerHTML = modelsJson[key].name;
-            c('.modelsInfo--desc').innerHTML = modelsJson[key].description;
+            c('.modelsBig img').src = modelos[key].img;
+            c('.modelsInfo h1').innerHTML = modelos[key].name;
+            c('.modelsInfo--desc').innerHTML = modelos[key].description;
             c('.modelsInfo--size.selected').classList.remove('selected');
             cs('.modelsInfo--size').forEach((size, sizeIndex)=>{
                 if(sizeIndex == 2) {
                     size.classList.add('selected');
-                    c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
+                    c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelos[key].price[sizeIndex].toFixed(2)}`;
                 }
                 
-                size.querySelector('span').innerHTML = modelsJson[key].sizes[sizeIndex];
+                size.querySelector('span').innerHTML = modelos[key].sizes[sizeIndex];
             });
             c('.modelsInfo--qt').innerHTML = modalQt;
             c('.modelsWindowArea').style.opacity = 0; 
@@ -118,21 +118,21 @@ function main() {
         size.addEventListener('click', (e)=> {
             c('.modelsInfo--size.selected').classList.remove('selected');
             size.classList.add('selected');
-            c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelsJson[key].price[sizeIndex].toFixed(2)}`;
+            c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelos[key].price[sizeIndex].toFixed(2)}`;
         });
     });
 
     c('.modelsInfo--addButton').addEventListener('click', ()=>{
         
         let size = parseInt(c('.modelsInfo--size.selected').getAttribute('data-key'));
-        let identifier = modelsJson[key].id+'@'+size;
+        let identifier = modelos[key].id+'@'+size;
         let locaId = cart.findIndex((item)=>item.identifier == identifier);
         if(locaId > -1){
             cart[locaId].qt += modalQt;
         } else {
             cart.push({
                 identifier,
-                id:modelsJson[key].id,
+                id:modelos[key].id,
                 size,
                 qt:modalQt
             });

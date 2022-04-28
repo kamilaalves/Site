@@ -1,4 +1,4 @@
-let modelsJson = [
+let modelos = [
     {id:1, name:'Roupinha', img:'img/bailarina1.png', price:[20.00, 25.00, 30.00], sizes:['G', 'M', 'P'], description:'Saia de tule'},
     {id:2, name:'Capa de chuva', img:'img/capa-chuva1.png', price:[15.00, 20.00, 25.00], sizes:['G', 'M', 'P'], description:'Capa de chuva'},
     {id:3, name:'Conjunto', img:'img/conjunto1.png', price:[15.00, 20.00, 25.00], sizes:['G', 'M', 'P'], description:'Conjunto chique'},

@@ -1,4 +1,4 @@
-let modelsJson = [
+let modelos = [
     {id:1, name:'Brinquedo', img:'img/skate.png', price:[20.00, 25.00, 30.00], sizes:['G', 'M', 'P'], description:'Lorem Ipsum'},
     {id:2, name:'Brinquedo', img:'img/banana.png', price:[15.00, 20.00, 25.00], sizes:['G', 'M', 'P'], description:'Lorem Ipsum'},
     {id:3, name:'Brinquedo', img:'img/bolaamarela.png', price:[15.00, 20.00, 25.00], sizes:['G', 'M', 'P'], description:'Lorem Ipsum'},
