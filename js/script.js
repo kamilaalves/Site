@@ -4,7 +4,7 @@ const cs = (el)=>document.querySelectorAll(el);
 let cart = [];
 
 function updateCart() {
-    c('.menu-openner span').innerHTML = cart.length;
+    c('.menu-2 span').innerHTML = cart.length;
     if(cart.length > 0) {
         c('aside').classList.add('show');
         c('.cart').innerHTML = ''; 
@@ -13,21 +13,21 @@ function updateCart() {
         let total = 0;
         cart.map((itemCart, index)=>{
             let modelItem = modelos.find((itemBD)=>itemBD.id == itemCart.id);
-            subtotal += modelItem.price[itemCart.size] * itemCart.qt;
+            subtotal += modelItem.preco[itemCart.size] * itemCart.qt;
             let cartItem = c('.models .cart--item').cloneNode(true);
-            let modelSizeName;
+            let modelSizeNome;
             switch(itemCart.size) {
                 case 0:
-                    modelSizeName = 'P';
+                    modelSizeNome = 'P';
                     break;
                 case 1:
-                    modelSizeName = 'M';
+                    modelSizeNome = 'M';
                     break;
                 case 2:
-                    modelSizeName = 'G';
+                    modelSizeNome = 'G';
             }
             cartItem.querySelector('img').src = modelItem.img;
-            cartItem.querySelector('.cart--item-nome').innerHTML = `${modelItem.name} (${modelSizeName})`;
+            cartItem.querySelector('.cart--item-nome').innerHTML = `${modelItem.nome} (${modelSizeNome})`;
             cartItem.querySelector('.cart--item--qt').innerHTML = itemCart.qt;
             cartItem.querySelector('.cart--item-qtmenos').addEventListener('click',()=>{
                 if(itemCart.qt > 1) {
@@ -69,21 +69,21 @@ function main() {
         let modelsItem = c('.models .models-item').cloneNode(true);
         modelsItem.setAttribute('data-key', index);
         modelsItem.querySelector('.models-item--img img').src= item.img;
-        modelsItem.querySelector('.models-item--price').innerHTML = `R$ ${item.price[0].toFixed(2)}`;
-        modelsItem.querySelector('.models-item--name').innerHTML = item.name;
-        modelsItem.querySelector('.models-item--desc').innerHTML = item.description;
+        modelsItem.querySelector('.models-item--preco').innerHTML = `R$ ${item.preco[0].toFixed(2)}`;
+        modelsItem.querySelector('.models-item--nome').innerHTML = item.nome;
+        modelsItem.querySelector('.models-item--desc').innerHTML = item.descricao;
         modelsItem.querySelector('a').addEventListener('click', (e)=>{
             e.preventDefault(); 
             key = e.target.closest('.models-item').getAttribute('data-key'); 
             modalQt = 1;
             c('.modelsBig img').src = modelos[key].img;
-            c('.modelsInfo h1').innerHTML = modelos[key].name;
-            c('.modelsInfo--desc').innerHTML = modelos[key].description;
+            c('.modelsInfo h1').innerHTML = modelos[key].nome;
+            c('.modelsInfo--desc').innerHTML = modelos[key].descricao;
             c('.modelsInfo--size.selected').classList.remove('selected');
             cs('.modelsInfo--size').forEach((size, sizeIndex)=>{
                 if(sizeIndex == 2) {
                     size.classList.add('selected');
-                    c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelos[key].price[sizeIndex].toFixed(2)}`;
+                    c('.modelsInfo--atualPreco').innerHTML = `R$ ${modelos[key].preco[sizeIndex].toFixed(2)}`;
                 }
                 
                 size.querySelector('span').innerHTML = modelos[key].sizes[sizeIndex];
@@ -118,7 +118,7 @@ function main() {
         size.addEventListener('click', (e)=> {
             c('.modelsInfo--size.selected').classList.remove('selected');
             size.classList.add('selected');
-            c('.modelsInfo--actualPrice').innerHTML = `R$ ${modelos[key].price[sizeIndex].toFixed(2)}`;
+            c('.modelsInfo--atualPreco').innerHTML = `R$ ${modelos[key].preco[sizeIndex].toFixed(2)}`;
         });
     });
 
@@ -141,7 +141,7 @@ function main() {
         closeModal();
     });
 
-    c('.menu-openner').addEventListener('click', ()=>{
+    c('.menu-2').addEventListener('click', ()=>{
         if(cart.length > 0){
             c('aside').style.left = '0';
         }

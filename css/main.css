@@ -139,7 +139,7 @@ header{
     display: flex;
 }
 
-.menu-openner{
+.menu-2{
     margin-right: 15px;
     font-size:26px;
     background-color:#C3DCB2;
@@ -147,7 +147,7 @@ header{
     border-radius: 5px;
 }
 
-.menu-openner span{
+.menu-2 span{
     margin-right: 10px;
 }
 
@@ -238,13 +238,13 @@ aside h1{
     background-color:#aec4a0;
 }
 
-.models-item-price{
+.models-item-preco{
     font-size:15px;
     color:#333;
     margin-top: 5px;
 }
 
-.models-item--name{
+.models-item--nome{
     font-size:20px;
     color:#87a872;
     font-weight: bold;
@@ -357,12 +357,12 @@ aside h1{
     color:#999;
     font-weight:normal;
 }
-.modelsInfo--price{
+.modelsInfo--preco{
     display:flex ;
     align-items:center
 }
 
-.modelsInfo--actualPrice{
+.modelsInfo--atualPreco{
     font-size: 28px;
     margin-right: 30px;
 }
@@ -436,7 +436,7 @@ aside h1{
     margin-right: 20px;
 }
 
-.cart--item-name{
+.cart--item-nome{
     flex:1;
 }
 
