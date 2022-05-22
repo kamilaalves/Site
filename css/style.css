@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -8,11 +8,13 @@ body{
 .menu-principal {
     width: 100%;
     background-color: #C3DCB2;
-    height: 70px;  /* ALTURA DO VERDE */
+    height: 70px;
+    /* ALTURA DO VERDE */
 }
 
-main, .content { 
-    margin:0 auto;
+main,
+.content {
+    margin: 0 auto;
     width: 980px;
     position: relative;
 }
@@ -23,162 +25,170 @@ main, .content {
     width: 70%;
 }
 
-.nome-loja h1{
+.nome-loja h1 {
     width: 25%;
-    float:right;
-    font-family:'lobster';
-    color:#87a376;
+    float: right;
+    font-family: 'lobster';
+    color: #87a376;
     font-size: 30px;
 }
 
 
-.header-2{
+.header-2 {
     background-color: white;
     width: 980px;
     margin: 0 auto;
-    padding:16px;
+    padding: 16px;
 }
 
-.menu-urls{
+.menu-urls {
     height: 80px;
     border-bottom: 3px solid #C3DCB2;
 
 }
 
-.menu ul li{
+.menu ul li {
     display: inline-block;
     color: black;
     margin-left: 15px;
-    height:40px ;
-    
+    height: 40px;
+
 }
 
-.menu ul li:hover{
+.menu ul li:hover {
     border-bottom: 3px dotted #C3DCB2;
 }
-.menu ul li a:hover{
-    color:#C3DCB2;
+
+.menu ul li a:hover {
+    color: #C3DCB2;
 }
 
-.menu ul li a{
+.menu ul li a {
     color: black;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
 }
 
-.menu{
+.menu {
     width: 70%;
-    float:left;
+    float: left;
 
 }
-.busca{
+
+.busca {
     text-align: center;
-    width:30%;
-    float:right;
+    width: 30%;
+    float: right;
 }
 
-.busca input{
+.busca input {
     width: 190px;
     height: 26px;
     margin-top: 10px;
     border: 1px solid #C3DCB2;
 }
 
-.col-100{
+.col-100 {
     width: 100%;
     float: left;
     position: relative;
 }
 
-.texto-destaque{
+.texto-destaque {
     text-align: center;
-    
+
 }
 
-.texto-destaque h1{
-    color:#C3DCB2;
+.texto-destaque h1 {
+    color: #C3DCB2;
     text-transform: uppercase;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2em;
-    
+
 }
-.texto-destaque p{
+
+.texto-destaque p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: black;
 }
 
-.foto-p img{
+.foto-p img {
     border-radius: 8px;
 }
-h2{
-    color:#C3DCB2;
+
+h2 {
+    color: #C3DCB2;
     font-size: 35px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-      
+
 }
 
 
-.bloco-texto{
+.bloco-texto {
     margin-top: 3em;
 }
 
 /* ----------------------------footer------------------------------- */
 
 .col-4 {
-    
+
     float: left;
     width: 50%;
     text-align: center;
-    position:relative;
-    
+    position: relative;
+
 }
+
 .footer h3 {
     text-align: center;
-    color:#42612f;
+    color: #42612f;
 }
+
 .footer {
-  background-color: #C3DCB2;
-  margin-top: 30px;
-  font-size: 18px;
- 
+    background-color: #C3DCB2;
+    margin-top: 30px;
+    font-size: 18px;
+
 }
+
 .footer-2 {
-    background-color:#aec4a0 ;
+    background-color: #aec4a0;
     height: 70px;
-    
+
 }
 
 .footer-2 p {
     padding: 8px;
     text-align: center;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 footer ul {
-    list-style:none; 
+    list-style: none;
 
 }
-footer li a{
-    padding:3px;
+
+footer li a {
+    padding: 3px;
 }
 
-.fa-instagram{
+.fa-instagram {
     font-size: 25px;
-    color: rgb(230, 37, 188);  
-  }
+    color: rgb(230, 37, 188);
+}
 
-.fa-twitter-square{
-    font-size:25px;
-    color:rgb(80, 157, 235);
+.fa-twitter-square {
+    font-size: 25px;
+    color: rgb(80, 157, 235);
 }
 
 /* -------------------- pagina de contato --------------------------- */
 
-.fale-conosco{
-    background-color:#C3DCB2;
+.fale-conosco {
+    background-color: #C3DCB2;
     text-align: left;
     width: 400px;
     border-radius: 50px;
@@ -187,30 +197,30 @@ footer li a{
     padding: 30px;
 }
 
-.nome{
+.nome {
     padding: 25px;
 }
 
-.celular{
+.celular {
     padding: 25px;
 }
 
-.email{
-    padding:25px;
+.email {
+    padding: 25px;
 }
 
-.faleconosco{
+.faleconosco {
     padding: 25px;
 
 }
 
-.foto-contato{
+.foto-contato {
     text-align: right;
     padding-right: 20px;
-    
+
 }
 
-#fale{
+#fale {
     width: 250px;
     height: 35px;
     padding: 25px;
@@ -219,62 +229,63 @@ footer li a{
     border-width: 2px;
 }
 
-#nome{
+#nome {
     border-color: #87aa72;
 }
 
-#celular{
-    border-color: #87aa72;    
+#celular {
+    border-color: #87aa72;
 }
 
-#email{
+#email {
     border-color: #87aa72;
 }
 
 /*------------------------------------------------------*/
 
-@media(max-width:840px){
-   
+@media(max-width:840px) {
+
     .menu-principal {
         max-width: 100%;
-        height: 70px;  
+        height: 70px;
     }
-    
-    nav, .content { 
-        max-width:100%;
-        position: relative;  
+
+    nav,
+    .content {
+        max-width: 100%;
+        position: relative;
     }
-    
-    .nome-loja h1{
+
+    .nome-loja h1 {
         width: 80%;
     }
-    
-    .header-2{
+
+    .header-2 {
         max-width: 100%;
-        padding:2px;
+        padding: 2px;
     }
-    
-    .menu-urls{
+
+    .menu-urls {
         width: 100%;
         height: 80px;
         border-bottom: 3px solid #C3DCB2;
     }
-    
-    .menu ul li{
+
+    .menu ul li {
         display: inline-block;
         color: black;
         margin-left: 2px;
-        height:2px;    
-    }  
+        height: 2px;
+    }
 
-    .col-100{
+    .col-100 {
         width: 100%;
         float: left;
         position: relative;
     }
-    
-    .texto-principal{
+
+    .texto-principal {
         width: 100%;
     }
-       
+
 }

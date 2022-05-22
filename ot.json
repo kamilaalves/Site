@@ -1,0 +1,52 @@
+{
+    "modelos": [
+        {
+            "id": 1,
+            "nome": "Brinquedo",
+            "img": "img/skate.png",
+            "preco": [
+                20.00,
+                25.00,
+                30.00
+            ],
+            "sizes": [
+                "G",
+                "M",
+                "P"
+            ],
+            "descricao": "Lorem Ipsum"
+        },
+        {
+            "id": 2,
+            "nome": "Brinquedo",
+            "img": "img/banana.png",
+            "preco": [
+                15.00,
+                20.00,
+                25.00
+            ],
+            "sizes": [
+                "G",
+                "M",
+                "P"
+            ],
+            "descricao": "Lorem Ipsum"
+        },
+        {
+            "id": 3,
+            "nome": "Brinquedo",
+            "img": "img/bolaamarela.png",
+            "preco": [
+                15.00,
+                20.00,
+                25.00
+            ],
+            "sizes": [
+                "G",
+                "M",
+                "P"
+            ],
+            "descricao": "Lorem Ipsum"
+        }
+    ]
+}
